@@ -8,20 +8,27 @@
   cursor: default;
   scroll-behavior:smooth;
 }
-body{
-  background-color: var(--rtc--tertiary-color);
-}
 
 :root{
   --rtc--primary-color: black;
   --rtc--secondary-color: lightgray;
   --rtc--tertiary-color: whitesmoke;
   --rtc--quaternary-color: rgba(228, 218, 205, 0.765);
+  --letra-1: 30px;
+  --letra-2: 22px;
+  --letra-3: 16px;
+  --letra-4: 14px;
+  --letra-5: 12px;
+  --width-x2: 250px;
+  --pad1: 10px;
+  --pad2: 20px;
+  --pad3: 30px;
+  --pad4: 40px;
 }
 
 header{
   display: flex;
-  padding: 40px;
+  padding: var(--pad4);
   align-items: center;
   justify-content: space-between;
 
@@ -51,9 +58,9 @@ header nav{
 
 .NavBar a{
   text-decoration: none;
-  color: black;
-  font-size: 25px;
-  padding: 10px 15px;
+  color: var(--rtc--primary-color);
+  font-size: var(--letra-1);
+  padding: var(--pad1) 15px;
   cursor: pointer;
 }
 
@@ -71,7 +78,6 @@ header nav{
   }
   .Menu{
     display: flex;
-    font-size: 30px;
     cursor: pointer;
   }
 }
@@ -95,16 +101,16 @@ header nav{
   justify-content: center;
   align-items: flex-start;
   gap: 15px;
-  padding-left: 10px;
+  padding-left: var(--pad1);
 }
 
 main h1{
-  font-size: 30px;
+  font-size: var(--letra-1);
   color: var(--rtc--primary-color);
 }
 
 main p{
-  font-size: 14px;
+  font-size: var(--letra-4);
   font-weight: bold;
   color: var(--rtc--primary-color);
 }
@@ -113,8 +119,8 @@ main .Button{
   width: 130px;
   text-decoration: none;
   display: flex;
-  padding: 10px 16px;
-  font-size: 12px;
+  padding: var(--pad1) 16px;
+  font-size: var(--letra-5);
   background-color: var(--rtc--primary-color);
   color: var(--rtc--tertiary-color);
   border-radius: 10px;
@@ -139,7 +145,7 @@ main .Button:hover{
   .MainContent{
     display: flex;
     justify-content: flex-start;
-    padding-top: 10px;
+    padding-top: var(--pad1);
   }
 }
 
@@ -147,7 +153,7 @@ main .Button:hover{
 
 
 .InfoCards{
-  padding: 40px;
+  padding: var(--pad4);
   display: flex;
   gap: 20px;
 }
@@ -164,9 +170,9 @@ main .Button:hover{
 }
  
 .card-container{
-  width: 250px;
+  width: var(--width-x2);
   margin: 50px auto;
-  padding: 10px 0px;
+  padding: var(--pad1) 0px;
   border-radius: 10px;
   gap: 20px;
   box-shadow: 0 4px 20px -15px black;
@@ -179,7 +185,7 @@ main .Button:hover{
 }
 
 article img{
-  width: 250px;
+  width: var(--width-x2);
   height: 150px;
   object-fit: contain;
   border-radius: 12px;
@@ -193,7 +199,7 @@ article img{
 }
 
 .text-card p{
-  font-size: 20px;
+  font-size: var(--letra-2);
   font-weight: bold;
   color: var(--rtc--primary-color);
 }
@@ -205,11 +211,11 @@ article img{
   text-decoration: none;
   background-color: var(--rtc--primary-color);
   border-radius: 10px;
-  padding: 5px 10px;
+  padding: 5px var(--pad1);
   cursor: pointer;
   color: var(--rtc--tertiary-color);
   border: 2px solid var(--rtc--tertiary-color);
-  font-size: 12px;
+  font-size: var(--letra-5);
   transition: transform 0.5s;
 }
 
@@ -232,7 +238,7 @@ article img{
     flex-direction: row;
     flex-wrap: nowrap;
     overflow-x:scroll;
-    padding: 20px;
+    padding: var(--pad2);
     gap: 15px;
   }
 }
@@ -259,8 +265,8 @@ article img{
 }
 
 .text-Maybach h4{
-  font-size: 35px;
-  padding-bottom: 20px;
+  font-size: var(--letra-1);
+  padding-bottom:var(--pad2) ;
 }
 
 .text-Maybach span:hover{
@@ -274,9 +280,9 @@ color: crimson;
 }
 
 .text-Maybach a{
-  font-size: 14px;
+  font-size: var(--letra-4);
   text-decoration: none;
-  color: black;
+  color: var(--rtc--primary-color);
   font-weight: bold;
   cursor: pointer;
 }
@@ -297,7 +303,7 @@ color: crimson;
   justify-content: space-around;
   background-color: rgba(22, 18, 18, 0.708);
   color: var(--rtc--tertiary-color);
-  padding: 30px;
+  padding: var(--pad3);
   padding-right: 25px;
   margin: 0px;
   gap: 30px;
@@ -305,7 +311,7 @@ color: crimson;
 }
 
 .Contact p{
-  font-size: 14px;
+  font-size: var(--letra-4);
   font-weight:700;
 }
 
@@ -350,7 +356,7 @@ color: crimson;
   align-items: center;
   justify-items: center;
   width: 100%;
-  padding: 30px;
+  padding: var(--pad3);
   margin: 0px;
   background-color: var(--rtc--primary-color);
   color: var(--rtc--tertiary-color);
@@ -358,11 +364,11 @@ color: crimson;
 }
 
 .Form-suscribe h4{
-  font-size: 22px;
+  font-size: var(--letra-2);
 }
 
 .Parrafo1{
-  font-size: 16px;
+  font-size: var(--letra-3);
 }
 
 .Email-form{
@@ -380,13 +386,13 @@ color: crimson;
   padding-left: 25px;
   cursor: text;
   color: var(--rtc--tertiary-color);
-  font-size: 16px;
+  font-size: var(--letra-3);
   font-weight: bold;
 }
 
 .Email-form input::placeholder{
-  color: white;
-  font-size: 16px;
+  color: var(--rtc--tertiary-color);
+  font-size: var(--letra-3);
   font-weight: bold;
 
 }
@@ -404,7 +410,7 @@ color: crimson;
   border: 2px solid var(--rtc--tertiary-color);
   cursor: pointer;
   font-weight: bold;
-  font-size: 16px;
+  font-size: var(--letra-3);
 }
 
 .InputCHECKBOX {
@@ -415,7 +421,7 @@ color: crimson;
 
 .InputCHECKBOX .Privacidad {
   text-decoration: underline white;
-  color: white;
+  color: var(--rtc--tertiary-color);
   cursor: pointer;
 }
 
@@ -454,8 +460,8 @@ color: crimson;
 
 .Redes_Sociales {
   display: flex;
-  width: 200px;
-  padding: 20px;
+  width: var(--width-x2);
+  padding: var(--pad2);
   justify-content: center;
   justify-items: center;
   align-content: center;
@@ -484,15 +490,15 @@ color: crimson;
   align-content: center;
   align-items: flex-start;
   justify-items: center;
-  background-color: black;
-  padding: 20px;
+  background-color: var(--rtc--primary-color);
+  padding: var(--pad2);
   color: var(--rtc--tertiary-color);
   list-style: none;
   gap: 30px;
 }
 
 .List-footer h4{
-  font-size: 24px;
+  font-size: var(--letra-2);
   font-weight: bold;
   padding-bottom: 15px;
 }
@@ -504,7 +510,7 @@ color: crimson;
 .List-links a{
   text-decoration: none;
   color: var(--rtc--secondary-color);
-  font-size: 16px;
+  font-size: var(--letra-3);
 }
 
 @media(max-width:450px){
@@ -517,8 +523,8 @@ color: crimson;
 .ScrollTop{
   display: flex;
   justify-content: flex-end;
-  background-color: black;
-  padding: 20px;
+  background-color: var(--rtc--primary-color);
+  padding: var(--pad2);
 }
 
 .ScrollTop img{
@@ -530,4 +536,10 @@ color: crimson;
 
 .ScrollTop img:hover{
   transform: translateY(-3px);
+}
+
+body{
+  background-color: var(--rtc--tertiary-color);
+  overflow-x: hidden;
+  width: 100%;
 }
